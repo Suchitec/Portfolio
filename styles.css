@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1EBEE;
+}
+.btn-primary {
+    color: white !important;
+    background-color: orangered !important;
+    border: orangered 2px solid !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.btn-primary:hover {
+    background-color: brown !important;
+    color: white;
+}
+.navbar {
+    background-color: #111316;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: orangered;
+}
+
+.btn-custom {
+    color: #0056b3;
+    border: orangered 2px solid;
+    border-radius: 25px;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: orangered;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/bgg.jpg') no-repeat center center/cover;
+    height: fit-content;
+    padding: 100px 0;
+    position: relative;
+    color: white;
+    text-align: left;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    flex-grow: inherit;
+}
+.hero-text {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.hero.btn {
+    margin-top: 10px;
+    width: fit-content;
+    text-align: center;
+    align-self: center;
+}
+.hero-image {
+    max-width: 100%;
+    border: orangered 5px solid;
+    border-radius: 10px;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.about-me p {
+    font-size: 1.1rem;
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.skill {
+    margin-bottom: 15px;
+}
+.progress {
+    height: 25px;
+    border-radius: 5px;
+}
+.progress-bar {
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    background-color: #CCCCFF;
+}
+.project-box {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.project-box p {
+    text-align: left;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+.project-box .btn {
+    margin-top: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.contact .form-control {
+    border-radius: 5px;
+    width: 75%;
+}
+.contact .btn {
+    width: fit-content;
+}
+
+/* Social Media Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+.social-links li {
+    margin-bottom: 15px;
+    width: fit-content;
+}
+.social-links a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.social-links a i {
+    margin-right: 10px;
+    color: #111316;
+}
+.social-links a:hover {
+    color: #0056b3;
+}
+
+.footer {
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 992px) { /* Tablets */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile Devices */
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) { /* Small Mobile Screens */
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    .hero-text {
+        font-size: 1.2rem;
+    }
+}
